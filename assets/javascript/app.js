@@ -1,5 +1,12 @@
 
 //a questions correct counter, a questions incorrect counter, a questions unanswered counter
+var rightAnswer = 0;
+var wrongAnswer = 0;
+var noAnswer = 0;
+var counter = 0;
+
+var answer= $("#answer");
+
 
 // This code will run as soon as the page loads
 window.onload = function() {
@@ -41,18 +48,37 @@ window.onload = function() {
   
       // DONE: increment time by 1, remember we cant use "this" here.
       stopwatch.time--;
-      console.log(stopwatch.time);
+      //console.log(stopwatch.time);
       if (stopwatch.time===0){
         stopwatch.stop();
         $("#questions").hide();
       $("#totalscorediv").show();
+      $("input").each(function(){
+        if (this.checked===true) {
+         if ($(this).hasClass("answer")){
+          rightAnswer++;          
+         } else {
+           wrongAnswer++; 
+         }
+        }
+       
+      })
+    
+      noAnswer = 8-rightAnswer-wrongAnswer;
+ 
+      $("#correct").text(rightAnswer);
+      $("#incorrect").text(wrongAnswer);
+      $("#unanswered").text(noAnswer);
+    
+      stopwatch.stop();
+
 
      }
   
       // DONE: Get the current time, pass that into the stopwatch.timeConverter function,
       //       and save the result in a variable.
       var converted = stopwatch.timeConverter(stopwatch.time);
-      console.log(converted);
+      //console.log(converted);
   
       // DONE: Use the variable we just created to show the converted time in the "display" div.
       $("#display").text(converted);
@@ -76,3 +102,27 @@ window.onload = function() {
       return minutes + ":" + seconds;
     }
   };
+
+  $("#stop").on("click", function() {
+      $("input").each(function(){
+        if (this.checked===true) {
+         if ($(this).hasClass("answer")){
+          rightAnswer++;          
+         } else {
+           wrongAnswer++; 
+         }
+        }
+       
+      })
+    
+      noAnswer = 8-rightAnswer-wrongAnswer;
+ 
+      $("#correct").text(rightAnswer);
+      $("#incorrect").text(wrongAnswer);
+      $("#unanswered").text(noAnswer);
+    
+      stopwatch.stop();
+      console.log($(this));
+   })
+  
+//   
