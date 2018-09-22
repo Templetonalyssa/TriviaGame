@@ -43,7 +43,7 @@ body { /* Visual */
     border-width: 5px;
   }
 
-  #score{
+  #totalscorediv{
     background-color:blanchedalmond;
     font-weight: bold;
     padding: 5px;
