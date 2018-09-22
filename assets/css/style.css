@@ -1,0 +1,57 @@
+body { /* Visual */
+    background: url(../images/Two\ bird.png);
+  }
+  
+  #display {
+    font-size: 30px;
+    color: black;
+  
+    /* Typography */
+    text-align: center;
+  
+    /* Visual */
+    background:blanchedalmond;
+  }
+  
+  #wrapper {
+    /* Box-model */
+    width: 500px;
+  
+    /* Positioning */
+    margin: 50px auto 0;
+
+  }
+  
+  #buttons { /* Typography */
+    text-align: center;
+  }
+  
+  button {
+    width: 50px;
+  
+    /* Box-model */
+    height: 50px;
+    font-weight: bold;
+  }
+
+  #questions{
+    background-color:blanchedalmond;
+    font-weight: bold;
+    padding: 5px;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+  }
+
+  #score{
+    background-color:blanchedalmond;
+    font-weight: bold;
+    padding: 5px;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+  
+
+  

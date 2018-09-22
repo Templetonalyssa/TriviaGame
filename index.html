@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <div id="display">00:00</div>
+
+    <!-- Div containing our stopwatch controls -->
+    <div id="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Done</button>
+    </div>
+
+    <div id="questions">
+      <P>1. The _____ is the only bird known to fly backwards.<BR>
+        <input type="radio" id = "answer">Hummingbird<BR>
+        <input type="radio" >Chicken<BR>
+        <input type="radio" >Crow<BR>
+        <input type="radio" >Osprey<BR>
+      </p>
+
+      <P>2. What is the proper term for a group of parrots?<BR>
+        <input type="radio" >Flamboyance<BR>
+        <input type="radio" >Vibrancy<BR>
+        <input type="radio" id = "answer">Pandemonium<BR>
+        <input type="radio" >Murder<BR>
+      </p>
+
+      <P>3. What is the fastest animal in the world when it is in a hunting dive?<BR>
+        <input type="radio">Eagle<BR>
+        <input type="radio" id = "answer">Peregrine Falcon<BR>
+        <input type="radio" >Red-Tailed Hawk<BR>
+        <input type="radio" >Osprey<BR>
+      </p>
+
+      <P>4. What bird is the international symbol of happiness?<BR>
+        <input type="radio">Lark<BR>
+        <input type="radio" id = "answer">Bluebird<BR>
+        <input type="radio" >Robin<BR>
+        <input type="radio" >Cardinal<BR>
+      </p>
+
+      <P>5. What kind of birds are trained to catch and fetch fish?<BR>
+        <input type="radio">Loons<BR>
+        <input type="radio">Kingfishers<BR>
+        <input type="radio">Mallards<BR>
+        <input type="radio" id = "answer">Cormorants<BR>
+      </p>
+
+      <P>6. The _____ has the largest wingspan of any living bird.<BR>
+        <input type="radio">Ruppell's Vulture<BR>
+        <input type="radio" id= "answer">Wandering Albatross<BR>
+        <input type="radio">Golden Eagle<BR>
+        <input type="radio">Ostrich<BR>
+      </p>
+
+      <P>7. How many known species of birds are there?<BR>
+        <input type="radio">5,000<BR>
+        <input type="radio" id = "answer">10,000<BR>
+        <input type="radio">15,000<BR>
+        <input type="radio">20,000<BR>
+      </p>
+
+      <P>8. The ____ is the Florida state bird.<BR>
+        <input type="radio">Gray Catbird<BR>
+        <input type="radio">Brown Thrasher<BR>
+        <input type="radio">Lovebird<BR>
+        <input type="radio" id = "answer" >Northern Mockingbird<BR>
+      </p>
+
+    </div>
+
+    <div id = "score">
+        <h1>All Done!</h1>
+        <p id= "correctanswers">Correct Answers:</p>
+        <p id = "incorrectanswers">Incorrect Answers:</p>
+        <p id="unanswered">Unanswered:</p>
+      </div>
+
+  </div>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
