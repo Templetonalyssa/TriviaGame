@@ -42,6 +42,8 @@ window.onload = function() {
       clockRunning = false;
       $("#questions").hide();
       $("#totalscorediv").show();
+      $("#display").hide();
+      $("#buttons").hide();
     },
 
     count: function() {
