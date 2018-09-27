@@ -8,7 +8,9 @@ body { /* Visual */
   
     /* Typography */
     text-align: center;
-  
+     border-style: groove;
+     border-color: black;
+     border-width: 5px;
     /* Visual */
     background:blanchedalmond;
   }
@@ -50,6 +52,10 @@ body { /* Visual */
     border-style: groove;
     border-color: black;
     border-width: 5px;
+    text-align: center;
+  }
+
+  h1{
     text-align: center;
   }
   
